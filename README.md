@@ -1,5 +1,5 @@
 # MALAX
-Association testing of bisulfite sequencing methylation data via Laplace approximation
+Association testing of bisulfite sequencing methylation data via a Laplace approximation
 
 
 
