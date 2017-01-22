@@ -5,6 +5,9 @@ Association testing of bisulfite sequencing methylation data via a Laplace appro
 
 MALAX (Mixed model Association via Laplace ApproXimation) is a Python package for association testing of bisulfite sequencing methylation data. It models the phenotype as an explanatory variable and each tested site as a reponse variable, using a binomial generalized linear mixed model (GLMM). The likelihood is approximated via a Laplace approximation.
 
+Several parts of the code are loosely based on code translated from the [GPML toolbox](http://www.gaussianprocess.org/gpml/code/matlab/).
+
+
 <br><br>
 #Installation
 MALAX is designed to work in Python 2.7, and depends on the following freely available Python package:
@@ -43,7 +46,14 @@ python run_laplace.py --mcounts example/y.txt --counts example/r.txt --predictor
 This will analyze the data in the `example` directory using two variance components and will print the results to the file `example/malax_2K.txt`.
 
 
+<br><br>
+#Detailed Instructions
 
+MALAX takes as input a file with number of reads (`r.txt` in the example directory), a file with with number of methylated reads (`y.txt`), a file with a predictor (`pred.txt`), a file with covariates (`covars.txt`), and one or two covariance matrices associated with random effects (`--kernel` and `--kernel2`). The corresponding flags can be seen in the example above. The code will print a file with a p-value for every tested site.
+
+Additionally, the code supports a fixed effects beta-binomial model, which can be invoked by adding the flag `--test bb` to the example command above. This code will ignore the `--kernel` and `--kernel2` commands. 
+
+The format of the files can be seen in the example directory. It is the same format as used by [MACAU](http://www.xzlab.org/software.html).
 
 
 
