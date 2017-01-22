@@ -49,7 +49,7 @@ This will analyze the data in the `example` directory using two variance compone
 <br><br>
 #Detailed Instructions
 
-MALAX takes as input a file with number of reads (`r.txt` in the example directory), a file with with number of methylated reads (`y.txt`), a file with a predictor (`pred.txt`), a file with covariates (`covars.txt`), and one or two covariance matrices associated with random effects (`--kernel` and `--kernel2`). The corresponding flags can be seen in the example above. The code will print a file with a p-value for every tested site.
+MALAX takes as input a file with number of reads (`r.txt` in the example directory), a file with with number of methylated reads (`y.txt`), a file with a predictor (`pred.txt`), a file with covariates (`covars.txt`), and one or two covariance matrices associated with random effects (`K.txt` and `cell_types_K.txt`). The corresponding flags can be seen in the example above. The code will print a file with a p-value for every tested site.
 
 Additionally, the code supports a fixed effects beta-binomial model, which can be invoked by adding the flag `--test bb` to the example command above. This code will ignore the `--kernel` and `--kernel2` commands. 
 
