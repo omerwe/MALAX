@@ -38,7 +38,7 @@ To verify that the compilation succeeded, please verify that the file `laplace_c
 
 MALAX can be invoked via the script `run_laplace.py`.The list of available options can be seen by typing `run_laplace.py --help`.
 
-##TL;DR
+## TL;DR
 For an example, please run the following command (using the anaconda version of python if available):
 ```
 python run_laplace.py --mcounts example/y.txt --counts example/r.txt --predictor example/pred.txt --kernel example/K.txt --kernel2 example/cell_types_K.txt --covar example/covars.txt --out example/malax_2K.txt
