@@ -34,7 +34,7 @@ python setup.py build_ext --inplace
 To verify that the compilation succeeded, please verify that the file `laplace_cython.so` was created in the directory.
 
 <br><br>
-#Usage Overview
+# Usage Overview
 
 MALAX can be invoked via the script `run_laplace.py`.The list of available options can be seen by typing `run_laplace.py --help`.
 
@@ -47,7 +47,7 @@ This will analyze the data in the `example` directory using two variance compone
 
 
 <br><br>
-#Detailed Instructions
+# Detailed Instructions
 
 MALAX takes as input a file with number of reads (`r.txt` in the example directory), a file with with number of methylated reads (`y.txt`), a file with a predictor (`pred.txt`), a file with covariates (`covars.txt`), and one or two covariance matrices associated with random effects (`K.txt` and `cell_types_K.txt`). The corresponding flags can be seen in the example above. The code will print a file with a p-value for every tested site.
 
