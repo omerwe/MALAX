@@ -10,7 +10,7 @@ Several parts of the code are loosely based on code translated from the [GPML to
 
 <br><br>
 # Installation
-MALAX is designed to work in Python 2.7, and depends on the following freely available Python package:
+MALAX is designed to work in Python 2.7, and depends on the following freely available Python packages:
 * [numpy](http://www.numpy.org/) and [scipy](http://www.scipy.org/)
 * [scikit-learn](http://scikit-learn.org/stable/)
 * [cython](http://cython.org/)
