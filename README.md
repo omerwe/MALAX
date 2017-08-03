@@ -1,9 +1,9 @@
 # MALAX
 Association testing of bisulfite sequencing methylation data via a Laplace approximation
 
-
-
 MALAX (Mixed model Association via Laplace ApproXimation) is a Python package for association testing of bisulfite sequencing methylation data. It models the phenotype as an explanatory variable and each tested site as a reponse variable, using a binomial generalized linear mixed model (GLMM). The likelihood is approximated via a Laplace approximation.
+
+MALAX was published in: [Association testing of bisulfite-sequencing methylation data via a Laplace approximation. Bioinformatics 33.14,  i325-i332 (2017)](https://academic.oup.com/bioinformatics/article/33/14/i325/3953963/Association-testing-of-bisulfite-sequencing).
 
 Several parts of the code are loosely based on code translated from the [GPML toolbox](http://www.gaussianprocess.org/gpml/code/matlab/).
 
