@@ -55,6 +55,3 @@ Additionally, the code supports a fixed effects beta-binomial model, which can b
 
 The format of the files can be seen in the example directory. It is the same format as used by [MACAU](http://www.xzlab.org/software.html).
 
-For questions and comments, please contact Omer Weissbrod at oweissbrod[at]hsph.harvard.edu
-
-
